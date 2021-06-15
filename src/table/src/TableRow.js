@@ -95,7 +95,7 @@ const TableRow = memo(
     const height = rest.height || themeHeight
 
     return (
-      <TableRowProvider height={height}>
+      <TableRowProvider value={height}>
         <Pane
           ref={onRef}
           className={cx(themedClassName, className)}
